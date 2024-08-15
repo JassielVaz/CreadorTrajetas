@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de Tarjetas de Felicitación</title>
+    <!-- Enlace a tipografías de Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&family=Open+Sans:wght@300;400&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Creador de Tarjetas de Felicitación</h1>
+        
+        <div id="tematicas">
+            <button onclick="seleccionarTematica('navidad')">Navidad</button>
+            <button onclick="seleccionarTematica('san_valentin')">San Valentín</button>
+            <button onclick="seleccionarTematica('cumpleanos')">Cumpleaños</button>
+        </div>
+
+        <div id="contenido">
+            <div id="configuracion">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje"></textarea>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+
+                <label for="tipo-letra">Tipo de Letra:</label>
+                <select id="tipo-letra">
+                    <option value="'Lobster', cursive">Lobster</option>
+                    <option value="'Roboto', sans-serif">Roboto</option>
+                    <option value="'Open Sans', sans-serif">Open Sans</option>
+                </select>
+
+                <label for="color-letra">Color de Letra:</label>
+                <input type="color" id="color-letra">
+
+                <button id="vista-previa">Mostrar Vista Previa</button>
+            </div>
+
+            <div id="tarjeta">
+                <div id="tarjeta-texto"></div>
+                <div id="tarjeta-nombre"></div>
+            </div>
+        </div>
+
+        <div id="opciones-imagenes" class="opciones-imagenes">
+            <img id="imagen1" src="" alt="Imagen 1">
+            <img id="imagen2" src="" alt="Imagen 2">
+            <img id="imagen3" src="" alt="Imagen 3">
+        </div>
+    </div>
+
+    <script src="inicio.js"></script>
+</body>
+</html>
